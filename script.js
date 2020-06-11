@@ -77,9 +77,8 @@ window.addEventListener("load", function () {
       launchStatus.innerText = "Shuttle not ready for launch.";
       launchStatus.style.color = "red";
       event.preventDefault();
-    }
-    
-    if (parseInt(cargoInput.value) > 10000) {
+      
+    }else if (parseInt(cargoInput.value) > 10000) {
       let faultyItemsElement = document.getElementById("faultyItems");
       faultyItemsElement.style.visibility = "visible";
       
